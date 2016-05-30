@@ -20,8 +20,8 @@ var APP = {};
                         var state_id = $(this).val();
                         var destination_id = $(this).data('destination-id');
                         var destination_state_id = $(this).data('destination-state-id');
-                       
-                        
+
+
                         var save_state = $.ajax({
                             url: APP.base_url(APP.settings.module + '/save_state'),
                             data: {destination_state_id: destination_state_id, destination_touristic_id: destination_id, state_id: state_id},
@@ -39,6 +39,27 @@ var APP = {};
                     });
 
                 }
+                break;
+            case 'hoteles':
+                $('#state_id').on('change', function () {
+                    var state_id = $(this).val();
+                    var list_city = $.ajax({
+                        url: APP.base_url(APP.settings.module + '/get_city'),
+                        data: {state_id: state_id},
+                        dataType: 'json',
+                        type: 'post'
+                    });
+
+                    list_city.done(function (response) {
+                        if (response.retval) {
+                            $('#city_id').html(response.html);
+                        } else {
+                            alert(response.msg);
+                        }
+                    });
+                });
+
+
                 break;
         }
 
