@@ -8,7 +8,7 @@
         <?php foreach ($rs as $value): ?>
         <div class=" col-lg-4 col-md-4 col-xs-12"><div class="hotel ">
             <div class="feature">
-                <div class="feature1">
+                <div class="feature2">
                     <img src="assets/images/hotel-hotel.jpg" class="img-responsive" alt=""/>
                     <h4><?php echo $value->name;?></h4>
                 </div>

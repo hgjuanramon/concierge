@@ -12,16 +12,39 @@
                 </div>
             </div>
 
-            <div class=" margin-top-15 col-lg-4 col-md-4 col-xs-12">
-
-                <div class="row">
-                    <img src="assets/images/hotel1.jpg" class="img-responsive" alt=""/>
-                    <h4><?php echo $value->name; ?></h4>
-                </div>
-                <div class="feature2">
-                    <p><?php echo word_limiter($value->description, 20); ?></p>
-                </div>
-            </div>
+            <ul class="grid cs-style-3">
+                <li class="col-lg-4">
+                    <figure>
+                        <img src="assets/images/hotel1.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Camera</h3>
+                            <span>Jacob Cummings</span>
+                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4">
+                    <figure>
+                        <img src="assets/images/hotel1.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Camera</h3>
+                            <span>Jacob Cummings</span>
+                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4">
+                    <figure>
+                        <img src="assets/images/hotel1.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Camera</h3>
+                            <span>Jacob Cummings</span>
+                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!-- ... -->
+            </ul>
         </div>
     </div>
 </div>
